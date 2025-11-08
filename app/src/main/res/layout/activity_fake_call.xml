@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:padding="16dp">
+
+    <!-- Caller Icon -->
+    <ImageView
+        android:id="@+id/callIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/ic_call"
+        app:tint="#FFFFFF" />
+
+    <!-- Caller Name -->
+    <TextView
+        android:id="@+id/callerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/callIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="MOM"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <!-- Incoming Text -->
+    <TextView
+        android:id="@+id/incomingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/callerName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Incoming Call..."
+        android:textColor="#BBBBBB"
+        android:textSize="16sp" />
+
+    <!-- Decline Button -->
+
+    <!-- Accept Button -->
+
+    <!-- Add this just after your Accept and Decline buttons in activity_fake_call.xml -->
+
+    <Button
+        android:id="@+id/declineBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="81dp"
+        android:layout_toStartOf="@+id/acceptBtn"
+        android:backgroundTint="#E53935"
+        android:text="Decline"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:background="@drawable/red_circle_button"/>
+
+    <Button
+        android:id="@+id/acceptBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="82dp"
+        android:backgroundTint="#43A047"
+        android:text="Accept"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:background="@drawable/green_circle_button"/>
+
+    <Button
+        android:id="@+id/endBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#E53935"
+        android:text="End"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>
