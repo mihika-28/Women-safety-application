@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#FAFAFA">
+
+    <!-- App title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in to Secura"
+        android:textColor="#E91E63"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Phone Number -->
+    <EditText
+        android:id="@+id/phoneInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:padding="12dp"
+        android:background="@drawable/rounded_card"
+        android:layout_marginBottom="16dp" />
+
+    <!-- password -->
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/rounded_card"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Login Button -->
+        <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="14dp"
+        android:textAllCaps="false"
+        android:backgroundTint="#E91E63" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingTop="8dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</LinearLayout>
